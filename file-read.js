@@ -1,5 +1,5 @@
 var fs = require('fs');
-var fileBuffContent = fs.readFileSync(process.argv[2]);
-var fileStringContent = fileBuffContent.toString();
-var newLines = fileStringContent.split('/n');
-console.log(newLines-1);
+
+var fileContent = fs.readFileSync(process.argv[2]).toString();
+console.log(fileContent.split('\n').length - 1);
+
