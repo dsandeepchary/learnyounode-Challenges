@@ -1,4 +1,0 @@
-// Asynchrounous way of reading file
-var fs = require('fs');
-
-
